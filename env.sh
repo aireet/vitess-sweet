@@ -1,5 +1,5 @@
 # etcd 地址
-TOPO_SERVER=127.0.0.1:2379
+TOPO_SERVER=localhost:2379
 
 
 # vtctld
