@@ -7,7 +7,7 @@ vtgate -topo_implementation=etcd2 -topo_global_server_address=$TOPO_SERVER -topo
   -cell=cell1 \
   -cells_to_watch=cell1 \
   -port=15001 \
-  -mysql_server_port=15306 \
+  -mysql_server_port=13306 \
   -tablet_types_to_wait PRIMARY,REPLICA \
   -mysql_auth_server_impl=static \
   -mysql_auth_server_static_file=mysql_creds.json \
