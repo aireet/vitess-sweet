@@ -10,7 +10,7 @@ vtgate -topo_implementation=etcd2 -topo_global_server_address=$TOPO_SERVER -topo
   -mysql_server_port=13306 \
   -tablet_types_to_wait PRIMARY,REPLICA \
   -mysql_auth_server_impl=static \
-  -mysql_auth_server_static_file=./mysql_creds.json \
+  -mysql_auth_server_static_file=/app/vitess/vitess-sweet/mysql_creds.json \
   -grpc_port=15991 \
   -service_map='grpc-vtgateservice' \
   -vschema_ddl_authorized_users='%' \
