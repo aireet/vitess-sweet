@@ -3,7 +3,7 @@ source ./env.sh
 
 echo "CREATING A CELL"
 
-vtctlclient AddCellInfo \
+vtctl AddCellInfo \
   -root /vitess/cell1 \
   -server_address $TOPO_SERVER \
   cell1
