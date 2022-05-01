@@ -1,4 +1,6 @@
 
+source ./env.sh
+
 # mysql
 echo "Start Mysql"
 mysqlctl \
