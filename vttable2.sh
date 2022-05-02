@@ -5,7 +5,7 @@ source ./env.sh
 echo "Start Vttablet"
 vttablet -topo_implementation=etcd2 -topo_global_server_address=$TOPO_SERVER -topo_global_root=/vitess/global \
   -log_dir=${VTDATAROOT}/tmp \
-  -tablet-path=cell100-200 \
+  -tablet-path=cell1-200 \
   -init_keyspace=user_bill \
   -init_shard=1 \
   -db_host=127.0.0.1 \
