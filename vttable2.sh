@@ -8,6 +8,8 @@ vttablet -topo_implementation=etcd2 -topo_global_server_address=$TOPO_SERVER -to
   -tablet-path=cell100-200 \
   -init_keyspace=user_bill \
   -init_shard=1 \
+  -db_host=127.0.0.1 \
+  -db_port=33100 \
   -init_tablet_type=replica \
   -port=15101 \
   -grpc_port=16101 \
