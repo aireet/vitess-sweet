@@ -1,0 +1,7 @@
+{
+    "tables": {
+        "transaction_log_seq": {
+            "type": "sequence"
+        }
+    }
+}

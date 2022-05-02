@@ -1,0 +1,20 @@
+{
+"sharede":true,
+"vindexes":{
+    "hash":{
+        "type":"hash"
+    }
+},
+"tables": {
+    "transaction_log":{
+        "column_vindexes": 
+        [
+            {
+              "column": "user_id",
+              "name": "hash"
+            }
+        ]
+    }
+}
+
+}
