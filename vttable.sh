@@ -9,6 +9,7 @@ vttablet -topo_implementation=etcd2 -topo_global_server_address=$TOPO_SERVER -to
   -db_host=127.0.0.1 \
   -db_port=3306 \
   -db_allprivs_user=root \
+  -db_filtered_user=root \
   -db_dba_user=root \
   -db_dba_password=echo2022!~Aa \
   -db_app_user=root \
