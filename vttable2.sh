@@ -9,7 +9,7 @@ vttablet -topo_implementation=etcd2 -topo_global_server_address=$TOPO_SERVER -to
   -init_keyspace=user_bill \
   -init_shard=1 \
   -db_host=127.0.0.1 \
-  -db_port=13306 \
+  -db_port=33100 \
   -db_app_user=echo \
   -db_app_password=echo2022 \
   -init_tablet_type=replica \
