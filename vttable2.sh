@@ -18,7 +18,7 @@ vttablet -topo_implementation=etcd2 -topo_global_server_address=$TOPO_SERVER -to
   -db_filtered_password=echo2022!~Aa \
   -init_keyspace=user_bill \
   -db-config-erepl-dbname=vt_user_bill_1 \
-  -init_shard=1 \
+  -init_shard=0 \
   -init_tablet_type=replica \
   -port=15101 \
   -grpc_port=16101 \
