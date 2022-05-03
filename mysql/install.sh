@@ -12,4 +12,4 @@ grep 'temporary password' /var/log/mysqld.log
 
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'echo2022!~Aa';
 
- update user set host = '%' where user = 'root';
+update user set host = '%' where user = 'root';
