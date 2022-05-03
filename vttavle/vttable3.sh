@@ -4,7 +4,7 @@ source ../env.sh
 # vttablet
 echo "Start Vttablet"
 vttablet -topo_implementation=etcd2 -topo_global_server_address=$TOPO_SERVER -topo_global_root=/vitess/global \
-  -log_dir=${VTDATAROOT}/tmp \
+  -log_dir=${VTDATAROOT}/tmp3 \
   -tablet-path=cell1-300 \
   -db_host=172.18.135.216 \
   -db_port=3306 \
