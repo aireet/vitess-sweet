@@ -3,7 +3,7 @@ source ./env.sh
 
 
 vtgate -topo_implementation=etcd2 -topo_global_server_address=$TOPO_SERVER -topo_global_root=/vitess/global \
-  -log_dir=${VTDATAROOT}/tmp/vtgate \
+  -log_dir=${VTDATAROOT}/vtgate \
   -cell=cell1 \
   -cells_to_watch=cell1 \
   -port=15001 \
@@ -14,5 +14,5 @@ vtgate -topo_implementation=etcd2 -topo_global_server_address=$TOPO_SERVER -topo
   -grpc_port=15991 \
   -service_map='grpc-vtgateservice' \
   -vschema_ddl_authorized_users='%' \
-  -pid_file $VTDATAROOT/tmp/vtgate/vtgate.pid \
-   > $VTDATAROOT/tmp/vtgate/vtgate.out 2>&1 &
+  -pid_file $VTDATAROOT/vtgate/vtgate.pid \
+   > $VTDATAROOT/vtgate/vtgate.out 2>&1 &
