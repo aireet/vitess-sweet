@@ -6,6 +6,8 @@ echo "Start Vttablet"
 vttablet -topo_implementation=etcd2 -topo_global_server_address=$TOPO_SERVER -topo_global_root=/vitess/global \
   -log_dir=${VTDATAROOT}/tmp2 \
   -tablet-path=cell1-200 \
+  -vtctld_addr=127.0.0.1:15000
+  -health_check_interval=5s \
   -db_host=172.18.135.217 \
   -db_port=3306 \
   -db_dba_user=root \
