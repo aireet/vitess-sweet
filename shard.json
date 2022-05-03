@@ -10,7 +10,7 @@
         "column_vindexes": 
         [
             {
-              "column": "user_id",
+              "column": "id",
               "name": "hash"
             }
         ]
