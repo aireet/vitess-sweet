@@ -16,7 +16,7 @@ vttablet -topo_implementation=etcd2 -topo_global_server_address=$TOPO_SERVER -to
   -db_allprivs_password=echo2022!~Aa \
   -db_filtered_user=root \
   -db_filtered_password=echo2022!~Aa \
-  -init_keyspace=fundactions \
+  -init_keyspace=user_foundation \
   -init_shard=3 \
   -init_tablet_type=replica \
   -port=15103 \
@@ -28,4 +28,4 @@ vttablet -topo_implementation=etcd2 -topo_global_server_address=$TOPO_SERVER -to
   -queryserver-config-transaction-cap=300 \
   -queryserver-config-stream-pool-size=16 \
  -pid_file $VTDATAROOT/tmp3/vttablet.pid \
- > $VTDATAROOT/tmp/vttablet.out 2>&1 &
+ > $VTDATAROOT/tmp3/vttablet.out 2>&1 &
