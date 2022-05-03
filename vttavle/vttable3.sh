@@ -16,7 +16,7 @@ vttablet -topo_implementation=etcd2 -topo_global_server_address=$TOPO_SERVER -to
   -db_allprivs_password=echo2022!~Aa \
   -db_filtered_user=root \
   -db_filtered_password=echo2022!~Aa \
-  -init_keyspace=funds \
+  -init_keyspace=fundaction \
   -init_shard=3 \
   -init_tablet_type=replica \
   -port=15103 \
