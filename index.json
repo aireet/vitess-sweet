@@ -1,0 +1,30 @@
+{
+    "sharded": true,
+    "vindexes": {
+        "user_id_idx": {
+            "type": "hash"
+        },
+        "source_id_idx":{
+            "type":"consistent_lookup",
+            "params":{
+                "table":"transaction_log",
+                "from":"source_id",
+                "to":"user_id"
+            }
+        }
+    },
+    "tables": {
+        "transaction_log": {
+            "column_vindexes": [
+                {
+                    "column": "user_id",
+                    "name": "user_id_idx"
+                },
+                {
+                    "column":"source_id",
+                    "name":"source_id_idx"
+                }
+            ]
+        }
+    }
+}
