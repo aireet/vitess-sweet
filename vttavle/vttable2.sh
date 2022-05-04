@@ -23,7 +23,7 @@ vttablet -topo_implementation=etcd2 -topo_global_server_address=$TOPO_SERVER -to
   -init_tablet_type=replica \
   -port=15102 \
   -grpc_port=16102 \
-  -service_map 'grpc-queryservice,grpc-tabletmanager' \
+  -service_map 'grpc-queryservice,grpc-tabletmanager,grpc-updatestream' \
   -enable_semi_sync=false \
   -enable_replication_reporter=false \
   -queryserver-config-pool-size=16 \
