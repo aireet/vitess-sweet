@@ -4,7 +4,7 @@ source ../env.sh
 # vttablet
 echo "Start Vttablet"
 vttablet -topo_implementation=etcd2 -topo_global_server_address=$TOPO_SERVER -topo_global_root=/vitess/global \
-  -log_dir=${VTDATAROOT}/tmp3 \
+  -log_dir=${VTDATAROOT}/fund3 \
   -tablet-path=fundaction-300 \
   -vtctld_addr=127.0.0.1:15000 \
   -health_check_interval=5s \
@@ -29,5 +29,5 @@ vttablet -topo_implementation=etcd2 -topo_global_server_address=$TOPO_SERVER -to
   -queryserver-config-pool-size=16 \
   -queryserver-config-transaction-cap=300 \
   -queryserver-config-stream-pool-size=16 \
- -pid_file $VTDATAROOT/tmp3/vttablet.pid \
- > $VTDATAROOT/tmp3/vttablet.out 2>&1 &
+ -pid_file $VTDATAROOT/fund3/vttablet.pid \
+ > $VTDATAROOT/fund3/vttablet.out 2>&1 &
