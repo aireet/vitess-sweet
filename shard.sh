@@ -1,5 +1,5 @@
 
-vtctldclient ApplySchema --sql-file transaction.sql user_foundation
 
+vtctlclient ApplySchema -sql-file transaction.sql user_foundation
 
-vtctldclient ApplyVSchema --vschema-file ./shard.json  user_foundation
+vtctlclient ApplyVSchema -vschema_file transaction_log.json user_foundation
