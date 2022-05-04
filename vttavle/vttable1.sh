@@ -19,6 +19,7 @@ vttablet -topo_implementation=etcd2 -topo_global_server_address=$TOPO_SERVER -to
   -db_filtered_user=root \
   -db_filtered_password=echo2022!~Aa \
   -init_keyspace=fundation \
+  -tracer opentracing-jaeger -jaeger-agent-host 127.0.0.1:6831 -tracing-sampling-rate 0.0 \
   -init_shard=-33 \
   -init_tablet_type=replica \
   -port=15101 \
