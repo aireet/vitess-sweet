@@ -19,7 +19,7 @@ vttablet -topo_implementation=etcd2 -topo_global_server_address=$TOPO_SERVER -to
   -db_filtered_user=root \
   -db_filtered_password=echo2022!~Aa \
   -init_keyspace=TestA \
-  -init_db_name_override=v1_ \
+  -init_db_name_override=vt2_ \
   -init_shard=50- \
   -init_tablet_type=replica \
   -port=15202 \
