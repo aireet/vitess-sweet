@@ -8,6 +8,7 @@ vttablet -topo_implementation=etcd2 -topo_global_server_address=$TOPO_SERVER -to
   -tablet-path=cell1-3 \
   -vtctld_addr=127.0.0.1:15000 \
   -health_check_interval=5s \
+  -tracer opentracing-jaeger -jaeger-agent-host 127.0.0.1:6831 -tracing-sampling-rate 1.0 \
   -db_host=172.18.135.216 \
   -db_port=3306 \
   -db_dba_user=root \
